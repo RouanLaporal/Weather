@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link href="./weather.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-side">
+            <div class="weather-gradient"></div>
+            <div class="date-container">
+                <h2 class="day-dayname" id="dateDayName"></h2>
+                <span class="date-day" id="dateDay"></span>
+                <i class="location-icon" data-feather="map-pin"></i>
+                <span class="location" id="location"></span>
+            </div>
+            <div class="weather-container">
+                <i class="weather-icon" data-feather="sun" id="weatherIcon"></i> <!-- Ne s'affiche pas-->
+                <h1 class="weather-temp" id="tempC"></h1>
+                <h3 class="weather-desc" id="weatherDesc"></h3>
+            </div>
+        </div>
+        <div class="info-side">
+            <div class="today-info-container">
+                <div class="today-info">
+                    <div class="precipitation">
+                        <span class="title">Pression</span>
+                        <span class="value" id="pressionValue"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="humidity">
+                        <span class="title">Humidity</span>
+                        <span class="value" id="humidityValue"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="wind">
+                        <span class="title">Wind</span>
+                        <span class="value" id="windValue"></span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="week-container">
+                    <ul class="week-list">
+                        <li class="active">
+                            <i class="dya-icon" data-feather="sun"></i>
+                            <span class="day-name" id="weekDayName">Mon</span>
+                            <span class="day-temp" id="weekTemp"> 29°C</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="location-container">
+                    <button class="location-button">
+                        <i data-feather="map-pin"></i>
+                        <span>Change loaction</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./weather.js"></script>
+</body>
+
+</html>
