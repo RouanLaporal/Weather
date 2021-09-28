@@ -1,4 +1,4 @@
-/*WeekList a terminer, problème à résoudre sur la fonction pour le jour de la semaine getDay retourne uniquement 1*/
+/*activation du changement de location*/
 var date = new Date();
 let dateDay = document.getElementById("dateDay");
 let dateDayName = document.getElementById("dateDayName");
